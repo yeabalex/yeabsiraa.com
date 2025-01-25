@@ -78,7 +78,7 @@ export default function MinimalistPortfolio() {
               { Icon: Twitter, href: "https://x.com/yeabalex_" }
             ].map(({ Icon, href }, index) => (
               <motion.a
-                key={href}
+                key={index}
                 href={href}
                 target="_blank"
                 whileHover={{ scale: 1.1 }}
