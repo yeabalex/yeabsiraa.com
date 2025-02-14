@@ -96,7 +96,7 @@ const MusicPlayer = () => {
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-[36rem] flex flex-col sm:flex-row rounded-xl shadow-xl overflow-hidden"
       >
-        <div className="relative w-full sm:w-[30%] flex items-center justify-center bg-black">
+        <div className="relative w-full sm:w-[30%] hidden sm:flex items-center justify-center bg-black">
           <div
             className="relative cursor-pointer w-full"
             onMouseEnter={() => setIsHovered(true)}
