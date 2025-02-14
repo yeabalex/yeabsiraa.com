@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, Github, Linkedin, Twitter, Sun, Moon } from 'lucide-react';
 import { Montserrat, Lato} from 'next/font/google'
-const monstreat = Montserrat({
+import ProjectShowcase from '@/components/projects';
+import RecentTracks from '@/components/spotify';
+export const monstreat = Montserrat({
   weight:['400', '500', '600', '700'],
   subsets:['latin'],
 })
-const lato  = Lato({ 
+export const lato  = Lato({ 
   weight:['400', '700'],
   subsets:['latin'],
  })
@@ -30,6 +32,7 @@ export default function MinimalistPortfolio() {
   }, []);
 
   return (
+    <>
     <div className={`${darkMode ? 'dark' : ''}`}>
       <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex items-center justify-center p-8">
         <motion.div
@@ -99,8 +102,11 @@ export default function MinimalistPortfolio() {
               Resume/CV
             </motion.a>
           </motion.div>
+          <RecentTracks/>
         </motion.div>
       </div>
+      <ProjectShowcase/>
     </div>
+    </>
   );
 }
