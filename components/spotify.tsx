@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause } from "lucide-react";
-import { monstreat } from "@/app/page";
+import { montserrat } from '@/fonts/fonts';
 import { fetchPlaylistTracks } from "@/utils/fetchPlaylistTracks";
 import dotenv from "dotenv";
 
@@ -89,7 +89,7 @@ const MusicPlayer = () => {
 
   return (
     <div
-      className={`flex items-center justify-center ${monstreat.className} mt-16 sm:px-0`}
+      className={`flex items-center justify-center ${montserrat.className} mt-16 sm:px-0`}
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -2,17 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, Github, Linkedin, Twitter, Sun, Moon } from 'lucide-react';
-import { Montserrat, Lato} from 'next/font/google'
 import ProjectShowcase from '@/components/projects';
 import RecentTracks from '@/components/spotify';
-export const monstreat = Montserrat({
-  weight:['400', '500', '600', '700'],
-  subsets:['latin'],
-})
-export const lato  = Lato({ 
-  weight:['400', '700'],
-  subsets:['latin'],
- })
+import { lato,montserrat } from '@/fonts/fonts';
+
 export default function MinimalistPortfolio() {
 
   const [darkMode, setDarkMode] = useState(false);
@@ -56,7 +49,7 @@ export default function MinimalistPortfolio() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className={`text-4xl font-light mb-4 ${monstreat.className}`}
+              className={`text-4xl font-light mb-4 ${montserrat.className}`}
             >
               Yeabsira A.
             </motion.h1>

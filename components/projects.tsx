@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
-import { Montserrat, Lato } from 'next/font/google';
-
-const montserrat = Montserrat({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-});
-
-const lato = Lato({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-});
+import { lato,montserrat } from '@/fonts/fonts';
 
 const ProjectShowcase = () => {
   const [activeProject, setActiveProject] = useState<number|null>(null);
