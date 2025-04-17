@@ -1,6 +1,4 @@
-i
-`:wq
-port { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import dotenv from 'dotenv'
 
 dotenv.config()
