@@ -99,6 +99,7 @@ export default function MinimalistPortfolio() {
         </motion.div>
       </div>
       <ProjectShowcase/>
+      <script src="https://chat.koolsalesai.com/widget.js" data-user-id="9e5981b1-2089-4358-964b-0c0d6404738c" async></script>
     </div>
     </>
   );
